@@ -16,10 +16,8 @@ app.post('/html-to-image', (req, res)=>{
         await browser.close();
         res.end(image);
     })
-    //res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
 });
 
-// listen for requests
 app.listen(3000, () => {
     console.log("Server is listening on port 3000");
 });
